@@ -80,7 +80,7 @@
 //! Домашнее задание - Логические операторы
 //! if statement
 // 1
-let a = 0 || 'string'; // string
+// let a = 0 || 'string'; // string
 
 // let a = 1 && 'string'; string
 
@@ -92,7 +92,7 @@ let a = 0 || 'string'; // string
 
 // let a = null && 0 && 35; // null
 
-console.log(a);
+// console.log(a);
 
 // 2
 // let b = 12 + 14 + '12'; // строка 2612 - конкатенация по второму знаку плюс
@@ -109,86 +109,88 @@ console.log(a);
 
 // let b = null + 5; // null приводится по типу к числу 5, становится 0
 
-let b = true + undefined; // 1 при попытке сложения с undefined даст NaN
+// let b = true + undefined; // 1 при попытке сложения с undefined даст NaN
 
-console.log(b);
-console.log(typeof b);
+// console.log(b);
+// console.log(typeof b);
 
 // 3
-let isVisible = 'hidden';
-if(isVisible == 'hidden'){
-  isVisible = 'visible';
-}
-else{
-  isVisible = 'hibben';
-}
+// let isVisible = 'hidden';
+// if(isVisible == 'hidden'){
+//   isVisible = 'visible';
+// }
+// else{
+//   isVisible = 'hibben';
+// }
 
-console.log(isVisible);
+// console.log(isVisible);
 
 // 4
-let someNumber = 3;
-if(someNumber == 0){
-  someNumber = 1;
-}
-else if(someNumber < 0){
-  someNumber = 'less then zero';
-}
-else if(someNumber > 0){
-  someNumber *= 10;
-}
+// let someNumber = 3;
+// if(someNumber == 0){
+//   someNumber = 1;
+// }
+// else if(someNumber < 0){
+//   someNumber = 'less then zero';
+// }
+// else if(someNumber > 0){
+//   someNumber *= 10;
+// }
 
-console.log(someNumber);
+// console.log(someNumber);
 
 // 5
-let car = { 
-  name: 'Lexus', 
-  age: 10, 
-  create: 2008, 
-  needRepair: false 
-};
+// let car = { 
+//   name: 'Lexus', 
+//   age: 10, 
+//   create: 2008, 
+//   needRepair: false 
+// };
 
-let isOk;
+// let isOk;
 
-if(car.age > 5){
-  console.log('Need Repair');
-  car.needRepair = true;
-} 
-else{
-  car.needRepair = false;
-}
+// if(car.age > 5){
+//   console.log('Need Repair');
+//   car.needRepair = true;
+// } 
+// else{
+//   car.needRepair = false;
+// }
 
-isOk = car.needRepair;
+// isOk = car.needRepair;
 
-console.log(`needRepair: ${isOk}`);
+// console.log(`needRepair: ${isOk}`);
 
 // 6
-let item = { 
-  name: 'Intel core i7', 
-  price: '100$', 
-  discount: '15%' 
-};
+// let item = { 
+//   name: 'Intel core i7', 
+//   price: '100$', 
+//   discount: '15%' 
+// };
 
 
-if( !isNaN(parseFloat(item.price)) && !isNaN(parseFloat(item.discount))){
-  item.priceWithDiscount = parseFloat(item.price) + (parseFloat(item.price) * (parseFloat(item.discount) / 100));
-  console.log(`priceWithDiscount: ${item.priceWithDiscount}$`);
-}
-else{
-  console.log(item.price);
-}
+// if( !isNaN(parseFloat(item.price)) && !isNaN(parseFloat(item.discount))){
+//   item.priceWithDiscount = parseFloat(item.price) + (parseFloat(item.price) * (parseFloat(item.discount) / 100));
+//   console.log(`priceWithDiscount: ${item.priceWithDiscount}$`);
+// }
+// else{
+//   console.log(item.price);
+// }
 
 // 7
-let product = {
-  name: 'Яблоко',
-  price: '10$'
-};
+// let product = {
+//   name: 'Яблоко',
+//   price: '10$'
+// };
 
-let min = 10;
-let max = 20;
+// let min = 10;
+// let max = 20;
 
-if( parseFloat(product.price) >= min && parseFloat(product.price) <= max ){
-  console.log(product.name);
-}
-else{
-  console.log('товаров не найдено')
-}
+// if( parseFloat(product.price) >= min && parseFloat(product.price) <= max ){
+//   console.log(product.name);
+// }
+// else{
+//   console.log('товаров не найдено')
+// }
+
+//! Домашнее задание - Тернарные операторы и switch case
