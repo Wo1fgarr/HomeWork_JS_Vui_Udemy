@@ -232,17 +232,25 @@
 
 //! Домашнее задание - Циклы
 // 1
-let startString = 'i am in the easycode';
-let editedString = '';
+let someStr = 'i am in the easycode';
+let editStr = '';
 
-// for (let i = 0; i < startString.length; i++){
-//   editedString = startString[i].indexOf();
-   
-// }
-
-if(startString.indexOf(' ') != 0){
-  editedString = startString.charAt(startString.indexOf(' ') + 1).toUpperCase() + 
-                 startString.slice(startString.indexOf(' ') + 2, startString.length - 1);
+for (let i = 0; i < someStr.length; i++){
+  if(someStr[i] === someStr.charAt(someStr.indexOf(' ') + 1)){
+      editStr += someStr[i].toUpperCase();
+  }
+  else{
+    editStr += someStr[i];
+  }   
 }
+console.log(editStr);
 
-console.log(editedString);
+// for (let i = 0; i < someStr.length; i++){
+//   editStr += someStr[i];
+// }
+// console.log(editStr);
+
+// if(someStr.indexOf(' ') != 0){
+//   editStr = someStr.charAt(someStr.indexOf(' ') + 1).toUpperCase() + 
+//             someStr.slice(someStr.indexOf(' ') + 2, someStr.length - 1);
+// }
