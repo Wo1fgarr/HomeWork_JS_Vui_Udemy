@@ -4,7 +4,9 @@
 // // извлекаем первый и последний символы
 // let someChar = string[0] + ' ' + string[string.length - 1];
 // // первая буква заглавная
-// let newStr = string.charAt(0).toUpperCase() + string.slice(1, string.length - 1) + string.charAt(string.length - 1).toUpperCase();
+/* let newStr = string.charAt(0).toUpperCase() + 
+                string.slice(1, string.length - 1) + 
+                string.charAt(string.length - 1).toUpperCase(); */
 // // определяем начало вхождения подстроки
 // let stringPosition = string.indexOf('string');
 // // ищем второй пробел
@@ -97,13 +99,17 @@
 // 2
 // let b = 12 + 14 + '12'; // строка 2612 - конкатенация по второму знаку плюс
 
-// let b = 3 + 2 - '1'; // число 4 арифметика т.к. нет конкатенации - первый элемент Number - интерпретатор приводит к числу
+/* число 4 арифметика т.к. нет конкатенации - первый элемент Number - 
+интерпретатор приводит к числу */
+// let b = 3 + 2 - '1';
 
-// let b = '3' + 2 - 1; // число потому, что второй минус, конкатенация невозможна 
+// число потому, что второй минус, конкатенация невозможна 
+// let b = '3' + 2 - 1; 
 
 // let b = true + 2; // true приводится к Number, далее сложение
 
-// let b = +'10' + 1; // знак + превращает строку 10 в число, далее операция сложения
+ // знак + превращает строку 10 в число, далее операция сложения
+// let b = +'10' + 1;
 
 // let b = undefined + 2; // undefined - это не число, операции с ним дадут NaN 
 
@@ -169,13 +175,15 @@
 // };
 
 
-// if( !isNaN(parseFloat(item.price)) && !isNaN(parseFloat(item.discount))){
-//   item.priceWithDiscount = parseFloat(item.price) + (parseFloat(item.price) * (parseFloat(item.discount) / 100));
-//   console.log(`priceWithDiscount: ${item.priceWithDiscount}$`);
-// }
-// else{
-//   console.log(item.price);
-// }
+/* if( !isNaN(parseFloat(item.price)) && !isNaN(parseFloat(item.discount))){
+     item.priceWithDiscount = parseFloat(item.price) + 
+                              (parseFloat(item.price) * 
+                              (parseFloat(item.discount) / 100));
+   console.log(`priceWithDiscount: ${item.priceWithDiscount}$`);
+ }
+ else{
+   console.log(item.price);
+ } */
 
 // 7
 // let product = {
@@ -221,3 +229,20 @@
 // c === 0 ? c = 1 : 
 // c < 0 ? c = 'less then zero' : 
 // c *= 10;
+
+//! Домашнее задание - Циклы
+// 1
+let startString = 'i am in the easycode';
+let editedString = '';
+
+// for (let i = 0; i < startString.length; i++){
+//   editedString = startString[i].indexOf();
+   
+// }
+
+if(startString.indexOf(' ') != 0){
+  editedString = startString.charAt(startString.indexOf(' ') + 1).toUpperCase() + 
+                 startString.slice(startString.indexOf(' ') + 2, startString.length - 1);
+}
+
+console.log(editedString);
