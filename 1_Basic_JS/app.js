@@ -231,26 +231,17 @@
 // c *= 10;
 
 //! Домашнее задание - Циклы
-// 1
+// 1 Сделать строку в которой все первые буквы каждого слова - заглавные
 let someStr = 'i am in the easycode';
-let editStr = '';
+let editArr = [];
+let resultStr = '';
 
-for (let i = 0; i < someStr.length; i++){
-  if(someStr[i] === someStr.charAt(someStr.indexOf(' ') + 1)){
-      editStr += someStr[i].toUpperCase();
-  }
-  else{
-    editStr += someStr[i];
-  }   
+editArr = someStr.split(' ');
+
+for (let i = 0; i < editArr.length; i++){
+  resultStr += (editArr[i].slice(0,1).toUpperCase() + 
+                editArr[i].slice(1) +
+                ' ');
 }
-console.log(editStr);
 
-// for (let i = 0; i < someStr.length; i++){
-//   editStr += someStr[i];
-// }
-// console.log(editStr);
-
-// if(someStr.indexOf(' ') != 0){
-//   editStr = someStr.charAt(someStr.indexOf(' ') + 1).toUpperCase() + 
-//             someStr.slice(someStr.indexOf(' ') + 2, someStr.length - 1);
-// }
+console.log(resultStr);
