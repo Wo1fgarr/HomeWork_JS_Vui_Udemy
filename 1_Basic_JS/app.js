@@ -245,3 +245,27 @@ for (let i = 0; i < editArr.length; i++){
 }
 
 console.log(resultStr);
+
+// 2 Перевернуть строку
+let invertedStr = 'tseb eht ma i';
+let invertStr = '';
+
+
+for (let i = invertedStr.length - 1; i >= 0; i--){
+  invertStr += invertedStr[i];
+}
+
+console.log(invertStr);
+
+
+// 3 Факториал числа
+
+let natNumber = 5;
+let factorial = 1;
+
+for (let i = natNumber; i > 1; i--){
+  factorial *= i;
+}
+
+console.log(factorial);
+
